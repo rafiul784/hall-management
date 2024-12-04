@@ -1,3 +1,29 @@
+Explanation of the Tables:
+1.Students Table: 
+Stores information about students, including their names, contact details, and the hall they are assigned to (hall_id foreign key).
+
+2.Halls Table: 
+Contains details about the university halls, including name, address, capacity, and how many rooms are available.
+
+3.RoomAllocations Table:
+ Tracks the allocation of rooms to students in university halls. This table associates a student with a specific room in a hall and stores details about the duration of the stay.
+
+4.Bookings Table:
+ If there are hall events (such as conferences, parties, or academic events), this table stores the event bookings made by students. It stores the event name, date, and time, along with the booking status (confirmed or cancelled).
+
+5Payments Table:
+ Manages payments related to bookings made for hall events or room accommodations. It tracks the amount, payment status, and method used (e.g., credit card, cash).
+
+6.Events Table: 
+If your system supports managing events in the halls (e.g., student meetups, department events), this table stores event details like name, description, date, time, duration, and which hall is hosting the event.
+
+
+Implementation
+
+You can directly copy and paste all the commands from the text given here into the SQL console to create and insert values into your table
+
+
+
 -- Creating the Students Table
 CREATE TABLE Students (
     student_id INT PRIMARY KEY AUTO_INCREMENT,
